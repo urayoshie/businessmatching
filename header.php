@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--css-->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/reset.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/common.css?v=250619">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/customize.css?v=250619">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/common.css?v=250724">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/customize.css?v=250724">
     <!--font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
