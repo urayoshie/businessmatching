@@ -83,6 +83,14 @@
     </div>
     <div id="past-event-modal-content"></div>
 </div>
+<!-- 2025年度イベント用モーダル -->
+<div id="past-event-modal-2025" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:#f8f8f8; overflow:auto; z-index:9999;">
+    <div id="close-past-event-modal-2025">
+        <span class="close-icon">×</span>
+        <span class="close-label">閉じる</span>
+    </div>
+    <div id="past-event-modal-content-2025"></div>
+</div>
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- drawer.js -->

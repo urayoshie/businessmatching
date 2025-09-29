@@ -371,9 +371,6 @@ PROGRAM
 .program__container__box .date span {
   font-size: 120%;
 }
-.add-space {
-  margin-top: 20px
-}
 .program__container__box .category {
   font-size: 1.6rem;
   font-weight: 500;
@@ -599,7 +596,7 @@ SEMINAR・EVENT
   }
 }
 .new-seminar-event__wrapper {
-  padding: 80px 0 86px;
+  padding: 32px 0 56px;
   color: #fff;
   position: relative;
   background: linear-gradient(to right, #FCA9BB, #F85F80);
@@ -607,19 +604,44 @@ SEMINAR・EVENT
   overflow: hidden;
 
 }
-@media screen and (max-width: 1640px) {
-  .new-seminar-event__wrapper {
-    padding: 40px 0;
+.new-seminar-event-2025 {
+  padding: 0 120px !important;
+}
+@media screen and (max-width: 880px) {
+  .new-seminar-event-2025 {
+    padding: 0 60px !important;
   }
 }
 @media screen and (max-width: 500px) {
+  .new-seminar-event-2025 {
+    padding: 0 30px !important;
+  }
+}
+.new-seminar-event-2025__wrapper {
+  padding: 80px 0 86px;
+  color: #fff;
+  position: relative;
+  background: linear-gradient(to right, #FCA9BB, #F85F80);
+  overflow: hidden;
+}
+@media screen and (max-width: 1640px) {
+  .new-seminar-event-2025__wrapper {
+    padding: 40px 0;
+  }
+}
+@media screen and (max-width: 768px) {
   .new-seminar-event__wrapper {
+    padding: 20px 0 32px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .new-seminar-event-2025__wrapper {
     padding: 30px 0;
   }
 }
 .event-bg {
   position: absolute;
-  top: 1800px;
+  top: 1700px;
   right: 0;
   width: 17vw;
   height: auto;
@@ -628,30 +650,33 @@ SEMINAR・EVENT
 @media screen and (max-width: 768px) {
   .event-bg {
     width: 50vw;
-    top: 5900px;
+    top: 3000px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .event-bg {
+    top: 2900px;
+    z-index: 1;
   }
 }
 @media screen and (max-width: 500px) {
   .event-bg {
-    top: 5850px;
-    z-index: 1;
+    top: 2750px;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
   .event-bg {
-    top: 5800px;
-    z-index: 1;
+    top: 2600px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .event-bg {
+    top: 2550px;
   }
 }
 @media screen and (max-width: 390px) {
   .event-bg {
-    top: 5700px;
-    z-index: 1;
-  }
-}
-@media screen and (max-width: 375px) {
-  .event-bg {
-    top: 5650px;
+    top: 2600px;
   }
 }
 p.event-title {
@@ -750,7 +775,7 @@ p.event-title {
 }
 @media screen and (max-width: 500px) {
   .new-seminar-event__content h3 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 .new-seminar-event__content h3 .pc-none {
@@ -1355,12 +1380,16 @@ p.event-title {
 }
 @media screen and (max-width: 1640px) {
   .new-seminar-event__description {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .new-seminar-event__description {
     font-size: 1.6rem;
   }
 }
 @media screen and (max-width: 500px) {
   .new-seminar-event__description {
-    font-size: 1.4rem;
     padding: 20px 0;
     text-align: left;
   }
@@ -1413,11 +1442,6 @@ p.event-title {
     scroll-margin-top: 80px;
   }
 }
-
-.modal-open {
-  overflow: hidden;
-}
-
 .video {
   width: 100%;
   aspect-ratio: 16/9;
@@ -1432,6 +1456,7 @@ p.event-title {
   left: 0;
   width: 100%;
   color: #222;
+  z-index: 9999;
 }
 .speaker__modal__bg {
   background: rgba(0, 0, 0, 0.4);
@@ -1454,6 +1479,7 @@ p.event-title {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   display: grid;
   gap: 20px;
+  z-index: 10000;
 }
 @media screen and (max-width: 500px) {
   .speaker__modal__content {
@@ -1568,7 +1594,174 @@ p.event-title {
     left: 16px;
   }
 }
+/* アーカイブ動画のスタイル ここから */
+.program-end-message {
+  text-align: center;
+  position: relative;
+  margin-bottom: 40px;
+}
 
+.program-end-message p {
+  display: inline-block;
+  color: #fff;
+  font-size: 2.4rem;
+  position: relative;
+  padding-bottom: 60px;
+}
+@media screen and (max-width: 768px) {
+  .program-end-message p {
+    font-size: 2.0rem;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .program-end-message p {
+    font-size: 1.8rem;
+  }
+}
+.program-end-message::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 1px;
+  background-color: #fff;
+  width: 100%;
+  max-width: 100%;
+  top: 50%;
+  z-index: 0;
+}
+
+.archive-video-section {
+  background: linear-gradient(to right, #FB7693, #F61243);
+  color: #fff;
+  padding: 56px 20px;
+  margin: 40px 0 64px 0;
+}
+@media screen and (max-width: 768px) {
+  .archive-video-section {
+    padding: 20px;
+    margin: 40px 0;
+  }
+}
+.archive-video-title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+@media screen and (max-width: 768px) {
+  .archive-video-title {
+    font-size: 2.0rem;
+  }
+}
+.archive-video-description {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.0rem;
+}
+@media screen and (max-width: 768px) {
+  .archive-video-description {
+    font-size: 1.8rem;
+  }
+  
+}
+.archive-video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1175px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1640px) {
+  .archive-video-grid {
+    max-width: 1080px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .archive-video-grid {
+    max-width: 1040px;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 1230px) {
+  .archive-video-grid {
+    gap: 0;
+  }
+}
+.archive-video-card {
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 530px) {
+  .archive-video-card {
+    padding: 10px 4px;
+  }
+  
+}
+.archive-video-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+@media screen and (max-width: 620px) {
+  .archive-video-thumb {
+    margin-bottom: 6px;
+  }
+}
+
+.archive-video-thumb iframe.video {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.archive-video-time {
+  list-style: none;
+  padding: 0;
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+.archive-video-time .time {
+  display: inline-block;
+  min-width: 60px;
+}
+.archive-video-time .label {
+  display: inline-block;
+}
+@media screen and (max-width: 500px) {
+  .archive-video-time {
+    font-size: 1.4rem;
+  }
+}
+.archive-video-time li {
+  display: flex;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+}
+@media (max-width: 620px) {
+  .archive-text-break-01 {
+    display: block;
+  }
+}
+@media (max-width: 530px) {
+  .archive-text-break-02 {
+    display: block;
+  }
+}
+/* レスポンシブ対応：1060px未満は1列レイアウト */
+@media screen and (max-width: 1060px) {
+  .archive-video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* アーカイブ動画のスタイル ここまで */
 /*---
 関連リンク
 ---*/

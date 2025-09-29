@@ -127,6 +127,10 @@ a:hover {
   padding: 0 40px;
   margin: auto;
 }
+.new-inner-2025 {
+  max-width: 100%;
+  margin: auto;
+}
 @media screen and (max-width: 1640px) {
   .new-inner {
     width: 1280px;
@@ -141,6 +145,9 @@ a:hover {
   .new-inner {
     padding: 0 20px;
   }
+}
+.past-event-2025 {
+  padding: 0 !important;
 }
 .sec-title,
 .new-sec-title {
@@ -200,68 +207,25 @@ a:hover {
   width: fit-content;
   display: block;
 }
-/* 参加申込ボタン */
-.apply-btn {
-  background-color: #34A5DE;
+
+/* 2025年度版を見るボタン */
+.detail-2025-btn {
+  background: transparent;
+  border: 1px solid #fff;
   width: 100%;
-  max-width: 320px;
+  max-width: 150px;
   border-radius: 8px;
   margin: auto;
-  margin-top: 86px;
-  padding: 16px;
+  padding: 8px 10px;
   display: block;
   color: #fff;
+  font-size: 2rem;
+  line-height: 1.8;
+  text-align: center;
 }
-@media screen and (max-width: 768px) {
-  .apply-btn {
-    max-width: 360px;
-    border-radius: 4px;
-    padding: 12px;
-    margin-top: 60px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .apply-btn {
-    max-width: 79%;
-    margin-top: 40px;
-  }
-}
-.apply-btn p {
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 0.05em;
-}
-@media screen and (max-width: 1640px) {
-  .apply-btn p {
-    font-size: 1.8rem;
-  }
-}
-@media screen and (max-width: 500px) {
-  .apply-btn p {
-    font-size: 1.6rem;
-  }
-}
-.apply-btn p img {
-  width: 26px;
-  margin-left: 12px;
-  margin-top: 2px;
-}
-@media screen and (max-width: 1640px) {
-  .apply-btn p img {
-    width: 20px;
-    margin-left: 8px;
-  }
-}
-@media screen and (max-width: 1640px) {
-  .apply-btn a {
-    padding: 16px 40px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .apply-btn a {
-    padding: 12px 20px;
+@media screen and (max-width: 1000px) {
+  .detail-2025-btn {
+      font-size: 1.8rem;
   }
 }
 /* 2024年度版を見るボタン */
@@ -515,7 +479,8 @@ a.program-menu {
     font-size: 2rem;
   }
 }
-#close-past-event-modal {
+#close-past-event-modal,
+#close-past-event-modal-2025 {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -524,24 +489,29 @@ a.program-menu {
   align-items: center;
   cursor: pointer;
   z-index: 10000;
+  color: #fff;
 }
 @media screen and (max-width: 1640px) {
-  #close-past-event-modal {
+  #close-past-event-modal,
+  #close-past-event-modal-2025 {
     top: 16px;
   }
 }
 /* 閉じるボタン */
-#close-past-event-modal .close-icon {
+#close-past-event-modal .close-icon,
+#close-past-event-modal-2025 .close-icon {
   font-size: 3.2rem;
   line-height: 1;
 }
-#close-past-event-modal .close-label {
+#close-past-event-modal .close-label,
+#close-past-event-modal-2025 .close-label {
   font-size: 1rem;
   margin-top: 0.2rem;
   text-align: center;
 }
 
-#close-past-event-modal .close-label {
+#close-past-event-modal .close-label,
+#close-past-event-modal-2025 .close-label {
   font-size: 0.9rem;
   margin-top: 0.2rem;
   color: #fff;

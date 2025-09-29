@@ -30,14 +30,20 @@ function mobile_posts_per_page( $query ) {
 add_action( 'pre_get_posts', 'mobile_posts_per_page' );
 
 /*----------------------------------------------------------*/
-// 2024年イベントモーダル用
+// 過去イベント全画面モーダル用
 /*----------------------------------------------------------*/
 add_action('wp_ajax_load_past_event', 'load_past_event_content');
 add_action('wp_ajax_nopriv_load_past_event', 'load_past_event_content');
 
 function load_past_event_content() {
-    // テーマ内の past-event.php を読み込んで出力
-    get_template_part('past-event'); // past-event.php を include
+    $year = isset($_POST['year']) ? sanitize_text_field($_POST['year']) : '';
+
+    if ($year === '2025') {
+        get_template_part('past-event-02'); // past-event-02.php
+    } else {
+        get_template_part('past-event'); // past-event.php (default: 2024)
+    }
+    
     wp_die(); // 処理終了
 }
 function localize_theme_url() {
